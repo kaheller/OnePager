@@ -135,8 +135,8 @@ h1 {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border: 2px solid black;
     border-radius: 50%;
     background-color: white;
@@ -145,17 +145,41 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #reload-button::before {
     content: '';
     display: block;
-    width: 15px;
-    height: 15px;
-    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
     border-radius: 50%;
     border-right-color: transparent;
     border-top-color: transparent;
     transform: rotate(45deg);
+}
+
+#reload-button::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    transform: rotate(45deg);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
 }
 
